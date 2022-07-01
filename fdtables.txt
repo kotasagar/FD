@@ -1,0 +1,9 @@
+CONTACT :-
+create table contactus(email varchar(30) references userdata,email varchar(30) references hirerdata);
+
+USER :-
+create table userdata(fname varchar(20),email varchar(30) primary key,lname varchar(30),phno int unique,pass varchar(20),age int,cpass varchar(20),gender varchar(10),dob date);
+
+HIRER :-
+create table hirerdata(fname varchar(20),email varchar(30) primary key,lname varchar(30),phno int unique,pass varchar(20),age int,cpass varchar(20),gender varchar(10),dob date);
+
